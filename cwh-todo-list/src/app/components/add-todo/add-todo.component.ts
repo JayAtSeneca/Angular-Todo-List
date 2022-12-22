@@ -25,7 +25,7 @@ export class AddTodoComponent implements OnInit {
       isActive: true
     }
     this.todoAdd.emit(todo);
-    this.title=""
-    this.description=""
+    this.title="";
+    this.description="";
   }
 }

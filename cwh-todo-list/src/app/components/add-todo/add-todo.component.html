@@ -2,7 +2,7 @@
 <form (ngSubmit)="onSubmit()">
   <div class="my-3">
     <div class="form-group">
-      <label for="title">Todo title:</label>
+      <label for="title"><strong>Todo title:</strong></label>
       <input
         type="title"
         [(ngModel)]="title"
@@ -12,8 +12,9 @@
         placeholder="Enter title"
       />
     </div>
+    <br>
     <div class="form-group">
-      <label for="description">Todo description:</label>
+      <label for="description"><strong>Todo description:</strong></label>
       <input
         type="text"
         [(ngModel)]="description"

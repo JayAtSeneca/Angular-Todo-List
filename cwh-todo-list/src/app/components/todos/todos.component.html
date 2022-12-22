@@ -1,5 +1,15 @@
 <app-add-todo (todoAdd)="AddTodo($event)"></app-add-todo>
 <h3>Your Items in the List</h3>
-<div *ngFor="let todo of todos">
-    <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)">{{todo.sno}} - {{todo.title}} - {{todo.desc}}</app-todo-item>
+<div
+  class="p-3 mb-2 bg-dark text-white"
+  *ngIf="this.todos.length === 0; else elseBlock"
+>
+  No Todos to display
 </div>
+<ng-template #elseBlock>
+  <div *ngFor="let todo of todos">
+    <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"
+      >{{ todo.sno }} - {{ todo.title }} - {{ todo.desc }}</app-todo-item
+    >
+  </div>
+</ng-template>
