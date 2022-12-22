@@ -30,4 +30,11 @@ export class TodosComponent {
     this.todos.push(item);
     localStorage.setItem("todos",JSON.stringify(this.todos));
   }
+
+  checkboxTodo(item: Todo){
+    const index = this.todos.indexOf(item);
+    this.todos[index].isActive = !this.todos[index].isActive;
+    localStorage.setItem("todos",JSON.stringify(this.todos));
+  }
+
 }
