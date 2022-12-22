@@ -1,1 +1,3 @@
-# Angular-In-One
+# Angular-Todo-List
+
+The todo list project is a web application built using Angular JS and Typescript. It allows users to create and manage a list of tasks that they need to complete. The application has a simple and intuitive interface, making it easy for users to add and delete tasks from the list. The todo list is stored in the browser's local storage, so it is accessible even when the user closes the browser or navigates away from the page. The project is built using Typescript, a statically-typed programming language that is a superset of JavaScript, providing additional features such as type checking and object-oriented programming. Overall, the todo list project is a useful tool for organizing and prioritizing tasks, helping users to stay on track and stay productive.
